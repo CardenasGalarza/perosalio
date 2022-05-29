@@ -2,9 +2,10 @@ import numpy as np
 import streamlit as st
 #import plotly_express as px
 import pandas as pd
-
-from os import devnull, sep
 import xlrd
+xlrd.xlsx.ensure_elementtree_imported(False, None)
+xlrd.xlsx.Element_has_iter = True
+from os import devnull, sep
 import warnings
 import re
 import gspread
