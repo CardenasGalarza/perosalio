@@ -73,16 +73,7 @@ if uploaded_file is not None:
         df = pd.read_excel(uploaded_file, dtype=str, engine='xlrd')
 
 
-global numeric_columns
-global non_numeric_columns
-try:
-    st.write(df)
-    numeric_columns = list(df.select_dtypes(['float', 'int']).columns)
-    non_numeric_columns = list(df.select_dtypes(['object']).columns)
-    non_numeric_columns.append(None)
-    print(non_numeric_columns)
-except Exception as e:
-    print(e)
+
     st.write("Por favor, cargue el archivo en la aplicación.")
 
 ## borrar nombres de la pagina
