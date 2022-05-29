@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run arte.py
+streamlit run --server.enableCORS false app.py
