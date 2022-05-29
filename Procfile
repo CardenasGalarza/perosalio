@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run rte.py
+web: sh setup.sh && streamlit run arte.py
