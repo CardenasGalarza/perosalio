@@ -67,14 +67,14 @@ if uploaded_file is not None:
         ]]
         Trouble2["CFS_SERVICE_TECHNOLOGY_NIL__c"] = Trouble2["CFS_SERVICE_TECHNOLOGY_NIL__c"].replace({'VOIP':'VOZ','GPON':'DATOS','CATV':'TV','DOCSIS':''}, regex=True)
         Trouble2 = Trouble2.rename(columns={'CFS_SERVICE_TECHNOLOGY_NIL__c':'BORRAR',})
-        Trouble2.columns = ['codreq','fec_regist','codedo','codctr','desnomctr','codmotv','desmotv','nomcli','desobsordtrab','destipvia','desnomvia','numvia','destipurb','codofcadm',
-        'desdtt','tiptecnologia','codtap','codbor','codtrtrn','desurb','nroplano','codnod','numtelefvoip','codpromo','tiplinea','codcli','BORRAR']
+        Trouble2.columns = ['codreq','fec_regist','codedo','codctr','desnomctr','codmotv','desmotv','nomcli','desobsordtrab','destipvia','desnomvia','numvia','destipurb','codofcadm','desdtt','tiptecnologia','codtap','codbor','codtrtrn','desurb','nroplano','codnod','numtelefvoip','codpromo','tiplinea','codcli','BORRAR']
         Trouble2['AVERIAS']='Trouble'
 
         Trouble2.to_csv('AVERIAS/DT_AVERIAS_Trouble.csv',index=False)
 
         st.write("SER CARGO CON EXITO Trouble Tickets")
 
+#KeyError: "None of [Index(['codreq', 'fec_regist', 'codedo', 'codctr', 'desnomctr', 'codmotv',\n       'desmotv', 'nomcli', 'desobsordtrab', 'destipvia', 'desnomvia',\n       'numvia', 'destipurb', 'codofcadm', 'desdtt', 'tiptecnologia', 'codtap',\n       'codbor', 'codtrtrn', 'desurb', 'nroplano', 'codnod', 'numtelefvoip',\n       'codpromo', 'tiplinea', 'codcli'],\n      dtype='object')] are in the [columns]"
 
     except Exception as e:
         print(e)
