@@ -1,1 +1,1 @@
-worker: python3 arte.py
+web: sh setup.sh && streamlit run arte.py
