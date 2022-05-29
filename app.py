@@ -61,7 +61,7 @@ if uploaded_file is not None:
         
         Trouble2 = Trouble.reindex(Trouble.columns.tolist() + additional_cols, axis = 1)
         
-        Trouble2['AVERIAS']='Trouble'
+        #Trouble2['AVERIAS']='Trouble'
 
         Trouble2.to_csv('AVERIAS/DT_AVERIAS_Trouble.csv',index=False)
 
