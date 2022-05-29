@@ -1,1 +1,2 @@
-web: sh setup.sh && streamlit run arte.py
+reminder: python src/arte.py
+heroku ps:scale web=1
