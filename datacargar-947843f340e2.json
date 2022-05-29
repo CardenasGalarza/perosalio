@@ -1,4 +1,5 @@
 {
+  "start":"gunicorn PHYSICS_COMMUNITY.wsgi",
   "type": "service_account",
   "project_id": "datacargar",
   "private_key_id": "947843f340e2526eb305c273db78b103938e66c2",
